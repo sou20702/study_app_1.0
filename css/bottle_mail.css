@@ -1,0 +1,43 @@
+/* ボトルメール（手紙タブ）専用スタイル
+   他タブ（クエスト／修練）の panel・ピル型タブ・ボタン・flash に合わせている */
+.page-wrap { max-width: 900px; margin: 20px auto; padding: 0 15px; font-family: Arial, sans-serif; line-height: 1.6; }
+
+.panel { background: #fff; border: 2px solid #008080; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+.panel h2, .panel h3 { margin-top: 0; }
+
+.flash { padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; font-weight: bold; }
+.flash.success { background: #e8f5e9; color: #2e7d32; border: 2px solid #a5d6a7; }
+
+/* フォーム */
+.field { margin-bottom: 12px; }
+.field label { font-size: 0.9em; display: block; margin-bottom: 4px; }
+.field textarea { width: 100%; max-width: none; padding: 8px; resize: vertical; }
+.canvas-wrap canvas { width: 100%; max-width: 400px; height: auto; border: 1px solid #ccc; border-radius: 6px; margin-top: 0; touch-action: none; }
+
+/* ボタン */
+.btn { border: none; border-radius: 6px; padding: 6px 12px; cursor: pointer; font-size: 0.9em; color: #fff; text-decoration: none; display: inline-block; }
+.btn-lg { padding: 10px 15px; }
+.btn-primary { background: #007bff; }
+.btn-success { background: #28a745; }
+.btn-gray { background: #888; }
+.btn:hover { opacity: 0.85; }
+.btn-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+/* ピル型タブ（クエストタブの .view-tabs と同じ見た目） */
+.view-tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.view-tabs button { padding: 7px 16px; border-radius: 20px; background: #e0e0e0; color: #333; font-weight: bold; font-size: 0.9em; }
+.view-tabs button.active { background: #219ebc; color: #fff; }
+.history-panel { display: none; }
+.history-panel.active { display: block; }
+
+/* 履歴・開封したボトル（修練タブのユニットカードに近いカード） */
+.history-item { background: #fafafa; border: 1px solid #e0e0e0; border-left: 5px solid #219ebc; border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+.history-date { font-size: 0.8rem; color: #666; margin-bottom: 6px; }
+.history-msg { word-break: break-word; }
+.history-img { max-width: 100%; width: 300px; height: auto; border: 1px solid #ccc; border-radius: 6px; margin-top: 8px; background: #fff; display: block; }
+.history-empty { color: #888; }
+.muted { color: #888; }
+.note { color: #666; font-size: 0.85em; }
+
+/* 開封結果の見出し */
+.section-label { font-size: 0.9em; font-weight: bold; color: #023047; margin: 12px 0 4px; }
